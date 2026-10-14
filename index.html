@@ -1,1 +1,270 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gustavo Fuchs – Religion, Media and Politics in Latin America</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--banner:#d7eae7;--bg:#fff;--ink:#1d2226;--muted:#5d676f;--line:#e2e6e8;--accent:#0f5c5c;--soft:#eef5f4;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12181b;--ink:#e9eef0;--muted:#9aa7ad;--line:#27323a;--accent:#6fc6c0;--soft:#1a2a2c;--on:#0c1214;--banner:#1d3537}}
+:root[data-theme="dark"]{--bg:#12181b;--ink:#e9eef0;--muted:#9aa7ad;--line:#27323a;--accent:#6fc6c0;--soft:#1a2a2c;--on:#0c1214;--banner:#1d3537}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 "Karla",system-ui,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+.bar{max-width:1000px;margin:0 auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font:600 1.4rem "Cormorant Garamond",Georgia,serif;text-decoration:none;color:var(--ink)}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px}
+.banner{background:var(--banner);border-bottom:1px solid var(--line);margin-bottom:8px}
+.hero{text-align:center;padding:64px 0 48px}
+.photo{width:210px;height:210px;border-radius:50%;object-fit:cover;background:var(--soft);display:block;margin:0 auto 28px;border:4px solid var(--bg)}
+h1{font:600 3rem/1.1 "Cormorant Garamond",Georgia,serif;margin:0 0 8px;letter-spacing:-.01em}
+.title{font:italic 500 1.3rem/1.4 "Cormorant Garamond",Georgia,serif;color:var(--muted);margin:0 0 4px}
+.tag{color:var(--accent);margin:0 0 28px;font-weight:500;letter-spacing:.02em}
+.bio{text-align:left;font-size:1.05rem}
+h2{font:600 2rem/1.2 "Cormorant Garamond",Georgia,serif;margin:0 0 18px;text-align:center}
+h3{font:600 1.3rem/1.3 "Cormorant Garamond",Georgia,serif;margin:30px 0 4px;color:var(--accent)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+.btn{display:inline-block;background:var(--accent);color:var(--on);padding:10px 22px;border-radius:4px;text-decoration:none;font-weight:700;font-size:.95rem;margin:4px 6px}
+.btn:hover{opacity:.9}
+.btns{text-align:center;margin-top:20px}
+.focus{background:var(--soft);padding:22px 26px;border-radius:4px}
+.focus h3{margin-top:0}
+.focus p{margin:6px 0 0}
+.list{margin:0;padding:0;list-style:none}
+.list li{display:grid;grid-template-columns:70px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.list li:last-child{border-bottom:0}
+.list .d{color:var(--muted);font-size:.9rem}
+.list span{color:var(--muted);font-size:.95rem;display:block}
+.plain{padding:0;margin:0;list-style:none}
+.plain li{padding:6px 0}
+.note{color:var(--muted);font-size:.9rem;text-align:center}
+footer{border-top:1px solid var(--line);padding:30px 22px;text-align:center;color:var(--muted);font-size:.9rem}
+footer a{margin:0 10px}
+.js [data-view]{display:none}
+.js [data-view].active{display:block}
+.js section[data-view]:not([data-view="home"]){border-top:0;padding-top:40px}
+.js section.active:not([data-view="home"])+*{}
+nav a.on{color:var(--accent);font-weight:700}
+@media (max-width:640px){h1{font-size:2.4rem}.list li{grid-template-columns:1fr;gap:2px}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="#/">Gustavo Fuchs</a>
+  <nav aria-label="Main">
+    <a href="#/research">Research</a><a href="#/publications">Publications</a><a href="#/public">Public Scholarship</a><a href="#/talks">Presentations</a><a href="#/teaching">Teaching</a><a href="#/awards">Awards</a><a href="Fuchs_CV_2026.pdf">CV</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="banner" data-view="home">
+<div class="wrap">
+  <div class="hero">
+    <img class="photo" src="photo.jpg" alt="Portrait of Gustavo Fuchs" onerror="this.removeAttribute('src')">
+    <h1>Gustavo Fuchs</h1>
+    <p class="title">Ph.D. Candidate, Latin American Studies<br>The University of Texas at Austin</p>
+    <p class="tag">Religion ✦ Media ✦ Politics</p>
+    <p class="bio"><strong>Gustavo Fuchs</strong> is a Ph.D. candidate at the Lozano Long Institute for Latin American Studies at the University of Texas at Austin. His research examines evangelical media and politics, spiritual warfare and digital pilgrimage, and media concentration and press freedom in Latin America. His dissertation, <em>“Creating the World Anew: Evangelical Media and Politics in Costa Rica and Guatemala,”</em> is advised by Dr. Brent Crosson, with the defense expected in March 2027. He also holds an LL.M. in International Law from the University of Nottingham and an M.A. in Communication and Public Opinion from FLACSO. He works and teaches in English and Spanish.</p>
+    <div class="btns"><a class="btn" href="mailto:gfuchs@utexas.edu">Email me</a></div>
+  </div>
+</div>
+</div>
+
+<div class="wrap">
+<section id="latest" data-view="home">
+  <h2>Latest</h2>
+  <ul class="list">
+    <li><div class="d">2027</div><div>Dissertation defense expected in March 2027.<span>Creating the World Anew: Evangelical Media and Politics in Costa Rica and Guatemala</span></div></li>
+    <li><div class="d">2026</div><div>Upcoming talk: “Fighting Evil in Cerro Quemado: Pilgrimage, Social Media and Spiritual Warfare in Guatemala’s Highlands.”<span>SSSR/RRA, Denver · <a href="#/talks">All presentations</a></span></div></li>
+    <li><div class="d">2026</div><div>Upcoming talk: “La política como ritual: legitimidad evangélica y elecciones presidenciales en Costa Rica y Guatemala.”<span>ACSRAL, Santiago · <a href="#/talks">All presentations</a></span></div></li>
+    <li><div class="d">Aug 2026</div><div>Podcast: <a href="https://andregagne.substack.com/p/spiritual-warfare-in-contemporary">Spiritual Warfare in Contemporary Central American Evangelical Politics</a><span>Spirit, State and Society · <a href="#/public">All public scholarship</a></span></div></li>
+    <li><div class="d">2026</div><div>Chapter published: “Religion, War and Peace.”<span>Handbook of Religion and Social Change, De Gruyter · <a href="#/publications">All publications</a></span></div></li>
+  </ul>
+</section>
+<section id="contact" data-view="home">
+  <h2>Contact</h2>
+  <p style="text-align:center">Lozano Long Institute for Latin American Studies, The University of Texas at Austin<br><a href="mailto:gfuchs@utexas.edu">gfuchs@utexas.edu</a> · <a href="https://orcid.org/0000-0002-9276-8011">ORCID 0000-0002-9276-8011</a></p>
+</section>
+</div>
+
+<div class="wrap">
+<section id="research" data-view="research">
+  <h2>Research</h2>
+  <div class="focus">
+    <h3>Dissertation</h3>
+    <p><strong>Creating the World Anew: Evangelical Media and Politics in Costa Rica and Guatemala.</strong> Expected defense: March 2027. Advisor: Dr. Brent Crosson.</p>
+  </div>
+  <h3>Research interests</h3>
+  <p>Religion and media in Latin America; evangelical politics and public discourse; spiritual warfare and digital pilgrimage; media concentration and press freedom; comparative Latin American politics.</p>
+  <h3>Research experience</h3>
+  <ul class="plain">
+    <li><strong>Graduate Student Research Affiliate, Center for Global Change and Media, UT Austin.</strong> Member of the team studying exiled journalism in Latin America, with an emphasis on Central America.</li>
+    <li><strong>Research Assistant, LLILAS Mexico Center, UT Austin.</strong> Documented the Center’s institutional history and produced an Impact Report and video for its 45th anniversary.</li>
+    <li><strong>Researcher, Universidad de Costa Rica.</strong> Co-coordinated a team analyzing 25 government manifestos and the UN Sustainable Development Goals during the 2022 elections.</li>
+    <li><strong>Researcher, Inter-American Institute of Human Rights.</strong> Produced two legal manuals on the right to information, later published as books.</li>
+  </ul>
+</section>
+
+<section id="publications" data-view="publications">
+  <h2>Publications</h2>
+  <h3>Peer-reviewed articles</h3>
+  <ul class="list">
+    <li><div class="d">2025</div><div>“Confesionalidad, Estado y diversidad religiosa en Costa Rica.” <em>Derecho y Religión</em>, vol. 20.</div></li>
+    <li><div class="d">2025</div><div>“Against the ‘Globalist Agenda’: Presidential Candidates’ Discourses Against the 2030 Agenda in Guatemala and Costa Rica.” <em>Revue internationale des études du développement</em>, no. 258.</div></li>
+    <li><div class="d">2024</div><div>“Austeridad y defensa: Los discursos de las élites económicas centroamericanas durante la pandemia.” <em>Estudios Sociológicos</em>, no. 42. With F. Robles and X. Alverenga.</div></li>
+    <li><div class="d">2020</div><div>“¿Campaña del miedo? Agenda temática y opinión pública en las elecciones presidenciales del 2014 en Costa Rica.” <em>Anuario de Estudios Centroamericanos</em>, vol. 46.</div></li>
+    <li><div class="d">2019</div><div>“Countering hate speech against refugees and migrants: An evaluation of international human rights treaties and soft law instruments.” <em>Revista Relaciones Internacionales</em>, no. 92.1.</div></li>
+    <li><div class="d">2010</div><div>“Colombia: Medio siglo de conflicto, nuevas dimensiones.” <em>Temas de Nuestra América</em>, no. 38.</div></li>
+    <li><div class="d">2008</div><div>“Medios de comunicación, poder y derechos ciudadanos.” <em>Cuadernos de Sociología</em>, no. 9.</div></li>
+  </ul>
+  <h3>Books</h3>
+  <ul class="list">
+    <li><div class="d">2020</div><div><em>Ejerciendo el derecho a la Información en América Latina: derecho a la información y derechos humanos.</em> San José: InterAmerican Institute of Human Rights.</div></li>
+    <li><div class="d">2020</div><div><em>Derecho a la información y derechos humanos: acceso a la información y protección del medio ambiente.</em> San José: InterAmerican Institute of Human Rights.</div></li>
+    <li><div class="d">2013</div><div><em>Las garras del fénix: La prensa comercial latinoamericana durante la Operación Fénix.</em> Quito: CIESPAL.</div></li>
+  </ul>
+  <h3>Book chapters</h3>
+  <ul class="list">
+    <li><div class="d">2027</div><div>“Framing the Battleground: Pilgrimage, Spiritual Warfare and Social Media in Guatemala’s Cerro Quemado,” in <em>Mediated Touring of Sacred Sites</em>. New York: Bloomsbury. Forthcoming.</div></li>
+    <li><div class="d">Forth.</div><div>“Medios Evangélicos en Guatemala: Entre doctrina, élites y política,” in <em>Memorias del Seminario Permanente de las Religiones en Centro América 2023–2024</em>. Guatemala City: Universidad Landivar.</div></li>
+    <li><div class="d">2026</div><div>“Religion, War and Peace,” in <em>Handbook of Religion and Social Change</em>. Berlin: De Gruyter.</div></li>
+    <li><div class="d">2025</div><div>“Discursive Power in Central America: Economic Elites and Disputes over Public Policies during the COVID-19 Pandemic,” in <em>The Political Economy of Elites in Latin America</em>. New York: Routledge. With F. Robles and X. Alverenga.</div></li>
+    <li><div class="d">2023</div><div>“La seducción de los atajos disruptivos,” in <em>Comunicación Política 100X100</em>. Buenos Aires: La Crujía.</div></li>
+    <li><div class="d">2021</div><div>“Medios de comunicación: de la alianza estratégica al desencuentro,” in <em>El Gobierno de Carlos Alvarado y la contrarrevolución neoliberal en Costa Rica</em>. San José: UCR-CIHAC.</div></li>
+    <li><div class="d">2013</div><div>“La juventud encara a los medios,” in <em>Democratizar la palabra</em>. Quito: ALAI.</div></li>
+  </ul>
+</section>
+
+<section id="public" data-view="public">
+  <h2>Public Scholarship</h2>
+  <ul class="list">
+    <li><div class="d">2026</div><div><a href="https://andregagne.substack.com/p/spiritual-warfare-in-contemporary">Spiritual Warfare in Contemporary Central American Evangelical Politics</a><span>Spirit, State and Society (podcast)</span></div></li>
+    <li><div class="d">2024</div><div><a href="https://podcasts.apple.com/us/podcast/under-the-shadow-ep-11-costa-rica-peace-democracymaybe/id1289450685?i=1000661674092">Costa Rica: Peace &amp; Democracy-Maybe</a><span>Under the Shadow (podcast)</span></div></li>
+    <li><div class="d">2023</div><div><a href="https://sites.utexas.edu/llilas-benson-magazine/2023/10/17/finding-god-over-the-airwaves-is-religious-media-driving-protestant-growth-in-latin-america/">Finding God over the Airwaves: Is Religious Media Driving Protestant Growth in Latin America?</a><span>Portal Magazine, no. 18</span></div></li>
+    <li><div class="d">2023</div><div><a href="https://therealnews.com/el-salvadors-model-of-authoritarianism-is-spreading-to-countries-like-costa-rica-and-honduras">El Salvador’s model of authoritarianism may be spreading to countries like Costa Rica and Honduras</a><span>Interview, The Real News Network</span></div></li>
+    <li><div class="d">2022</div><div><a href="https://repositorio.iis.ucr.ac.cr/items/b08a1d76-d196-40d8-ae35-df3e1093a1ec">Una fotografía de la concentración mediática en Centroamérica</a><span>Cuando El Zapato Aprieta (podcast)</span></div></li>
+    <li><div class="d">2021</div><div><a href="https://doi.org/10.1080/10714839.2021.2000761">Who Controls Latin America’s Media?</a><span>NACLA Report on the Americas, no. 53</span></div></li>
+    <li><div class="d">2020</div><div><a href="https://doi.org/10.1080/10714839.2020.1809075">Costa Rica’s Pandemic Pitfalls</a><span>NACLA Report on the Americas, no. 52</span></div></li>
+    <li><div class="d">2019</div><div><a href="https://id.erudit.org/iderudit/91736ac">Le Costa Rica, carboneutre d’ici 2050?</a><span>Revue Relations, no. 804</span></div></li>
+    <li><div class="d">2019</div><div><a href="https://mondediplo.com/outsidein/latinamerica-s-migration-problems">Latin America’s migration problems</a><span>Le Monde Diplomatique</span></div></li>
+    <li><div class="d">2018</div><div><a href="https://newint.org/columns/country/2018/07/04/countryprofile-costa-rica">Costa Rica: Country Profile</a><span>New Internationalist</span></div></li>
+    <li><div class="d">2018</div><div><a href="https://newint.org/features/web-exclusive/2018/04/05/fabricio-alvarado-evangelical-opposition">Evangelical uprising: a new political opposition in Costa Rica</a><span>New Internationalist</span></div></li>
+    <li><div class="d">2018</div><div><a href="https://newint.org/features/web-exclusive/2018/02/09/costa-rica-theocracy">Is Costa Rica on the path to evangelical theocracy?</a><span>New Internationalist</span></div></li>
+    <li><div class="d">2016</div><div><a href="https://www.ecologiapolitica.info/el-canal-de-nicaragua-en-clave-regional/">El Canal de Nicaragua en clave regional</a><span>Ecología Política, no. 51 (co-author)</span></div></li>
+  </ul>
+</section>
+
+<section id="talks" data-view="talks">
+  <h2>Conference Presentations</h2>
+  <ul class="list">
+    <li><div class="d">2026</div><div>“La política como ritual: legitimidad evangélica y elecciones presidenciales en Costa Rica y Guatemala.” ACSRAL, Santiago. Forthcoming.</div></li>
+    <li><div class="d">2026</div><div>“Fighting Evil in Cerro Quemado: Pilgrimage, Social Media and Spiritual Warfare in Guatemala’s Highlands.” SSSR/RRA, Denver. Forthcoming.</div></li>
+    <li><div class="d">2025</div><div>“The Effects of Evangelical Media in Guatemala.” SSSR/RRA, Minneapolis.</div></li>
+    <li><div class="d">2025</div><div>“Presidential Candidates’ Discourses Against the 2030 Agenda in Guatemala and Costa Rica.” AEJMC, San Francisco.</div></li>
+    <li><div class="d">2025</div><div>“From Mapping to Supporting Journalists in Exile in and Beyond Latin America.” LASA, San Francisco. With Dr. Celeste González de Bustamante.</div></li>
+    <li><div class="d">2023</div><div>“Prayer as a Political Resource: The Case of Costa Rica’s 2018 Elections.” LASA, Vancouver.</div></li>
+    <li><div class="d">2022</div><div>“Intervenciones Divinas: Los medios religiosos y las elecciones 2018 en Costa Rica.” CLACSO, México City.</div></li>
+    <li><div class="d">2022</div><div>“Religious Media in Electoral Contexts: Analyzing Costa Rica’s 2018 Elections.” International Conference on Communication &amp; Media Studies, Galway.</div></li>
+    <li><div class="d">2020</div><div>“Derechos económicos, sociales y culturales, y el derecho al acceso a información en el contexto de la pandemia por COVID-19.” Legislative Assembly of Costa Rica event, online.</div></li>
+  </ul>
+</section>
+
+<section id="teaching" data-view="teaching">
+  <h2>Teaching</h2>
+  <p class="note">Courses and lectures in English and Spanish.</p>
+  <ul class="plain">
+    <li><strong>Teaching Assistant, University of Texas at Austin.</strong> Introduction to American Government; United States History, 1492–1865; History of Modern Mexico, 1940–Present. Guest lecturer in United States History, 1492–1865.</li>
+    <li><strong>Adjunct Professor, FLACSO Costa Rica.</strong> Critical Reflections on Political Communication; Democracy and Citizen Empowerment; Journalism and Migration (with UN–IOM).</li>
+    <li><strong>Adjunct Professor, Universidad de Costa Rica.</strong> Political Communication.</li>
+    <li><strong>Adjunct Professor, Universidad Nacional de Costa Rica.</strong> International Regimes and Global Governance; International Relations Theory; International Environment Policies; Social Corporate Responsibility.</li>
+    <li><strong>Instructor, Kultur Studier (Norwegian Study Abroad Program).</strong> Contemporary Central American Politics; Latin American History.</li>
+  </ul>
+</section>
+
+<section id="awards" data-view="awards">
+  <h2>Fellowships, Grants and Awards</h2>
+  <ul class="list">
+    <li><div class="d">2025</div><div>AEJMC Latin America Communication Research Award, Paper Award (faculty-student competition)</div></li>
+    <li><div class="d">2025</div><div>AEJMC Latin America Communication Research Award, Paper Award (student competition)</div></li>
+    <li><div class="d">2025</div><div>LLILAS Interdisciplinary Research Seed Grant, “Journalism at risk: Authoritarian threats against local and exiled journalists in Costa Rica” (with Dr. Silvia Dalben and Dr. Celeste González de Bustamante)</div></li>
+    <li><div class="d">2021–26</div><div>Provost’s Graduate Excellence Fellowship, University of Texas at Austin</div></li>
+    <li><div class="d">2022–25</div><div>Lozano Long Graduate Summer Field Research Grant</div></li>
+    <li><div class="d">2023</div><div>LLILAS Professional Development Travel Award; Evan Frankel Fellowship in the Humanities</div></li>
+    <li><div class="d">2016</div><div>Latin America Masters Scholarship, University of Nottingham and Banco de Santander</div></li>
+    <li><div class="d">2013–14</div><div>FLACSO Ecuador Academic Excellence Scholarship (2013) and Field Research Scholarship (2014)</div></li>
+    <li><div class="d">2008</div><div>Cátedra Eugenio Tortós Prize for Best Essay, Universidad de Costa Rica</div></li>
+  </ul>
+  <h3>Affiliations and service</h3>
+  <ul class="plain">
+    <li>Coordinator, Media and Religion sub-group, CLACSO Working Group on Religions and Society in Latin America (2024–2027)</li>
+    <li>Affiliate Scholar: Center for Global Change and Media (UT Austin); Institute of Global Studies (University of Minnesota); Rapoport Center for Human Rights and Justice (UT Austin)</li>
+    <li>Member, Society for the Scientific Study of Religion; Asociación Costa Rica Íntegra (Transparency International chapter)</li>
+    <li>Research stay, ICESH, Universidad Landivar, Guatemala City (2024)</li>
+    <li>Languages: Spanish (native), English (fluent), French (advanced), Portuguese (intermediate)</li>
+  </ul>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <a href="#/research">Research</a><a href="#/publications">Publications</a><a href="#/public">Public Scholarship</a><a href="#/talks">Presentations</a><a href="#/teaching">Teaching</a><a href="Fuchs_CV_2026.pdf">CV</a>
+  <p>© Gustavo Fuchs</p>
+</footer>
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var views=document.querySelectorAll('[data-view]'),links=document.querySelectorAll('nav a');
+  var titles={research:'Research',publications:'Publications',public:'Public Scholarship',talks:'Presentations',teaching:'Teaching',awards:'Awards'};
+  function show(){
+    var r=(location.hash||'').replace(/^#\/?/,'');
+    if(!titles[r])r='home';
+    views.forEach(function(v){v.classList.toggle('active',v.dataset.view===r)});
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#/'+r)});
+    document.title=(r==='home'?'':titles[r]+' – ')+'Gustavo Fuchs';
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',show);show();
+})();
+</script>
+<script>
+/* Latest posts from Substack or Medium (RSS). Paste your feed address between the quotes.
+   Substack: https://YOURNAME.substack.com/feed
+   Medium:   https://medium.com/feed/@YOURNAME
+   Leave empty to show only the manual items. */
+var FEED_URL='https://medium.com/feed/@gustavo.fuchs';
+var FEED_LABEL='Medium';
+var FEED_COUNT=3;
+(function(){
+  if(!FEED_URL)return;
+  var list=document.querySelector('#latest .list');
+  fetch('https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent(FEED_URL))
+    .then(function(r){return r.json()})
+    .then(function(d){
+      if(!d||d.status!=='ok'||!d.items)return;
+      d.items.slice(0,FEED_COUNT).reverse().forEach(function(it){
+        var li=document.createElement('li'),dt=document.createElement('div'),box=document.createElement('div'),a=document.createElement('a'),sp=document.createElement('span');
+        dt.className='d';
+        var t=new Date(String(it.pubDate).replace(' ','T')+'Z');
+        dt.textContent=isNaN(t)?'':t.toLocaleDateString('en-US',{month:'short',year:'numeric'});
+        a.href=it.link;a.textContent=it.title;
+        sp.textContent=FEED_LABEL;
+        box.appendChild(a);box.appendChild(sp);li.appendChild(dt);li.appendChild(box);
+        list.insertBefore(li,list.firstChild);
+      });
+    })
+    .catch(function(){});
+})();
+</script>
+</body>
+</html>
