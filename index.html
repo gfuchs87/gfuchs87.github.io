@@ -83,13 +83,8 @@ nav a.on{color:var(--accent);font-weight:700}
 <div class="wrap">
 <section id="latest" data-view="home">
   <h2>Latest</h2>
-  <ul class="list">
-    <li><div class="d">2027</div><div>Dissertation defense expected in March 2027.<span>Creating the World Anew: Evangelical Media and Politics in Costa Rica and Guatemala</span></div></li>
-    <li><div class="d">2026</div><div>Upcoming talk: “Fighting Evil in Cerro Quemado: Pilgrimage, Social Media and Spiritual Warfare in Guatemala’s Highlands.”<span>SSSR/RRA, Denver · <a href="#/talks">All presentations</a></span></div></li>
-    <li><div class="d">2026</div><div>Upcoming talk: “La política como ritual: legitimidad evangélica y elecciones presidenciales en Costa Rica y Guatemala.”<span>ACSRAL, Santiago · <a href="#/talks">All presentations</a></span></div></li>
-    <li><div class="d">Aug 2026</div><div>Podcast: <a href="https://andregagne.substack.com/p/spiritual-warfare-in-contemporary">Spiritual Warfare in Contemporary Central American Evangelical Politics</a><span>Spirit, State and Society · <a href="#/public">All public scholarship</a></span></div></li>
-    <li><div class="d">2026</div><div>Chapter published: “Religion, War and Peace.”<span>Handbook of Religion and Social Change, De Gruyter · <a href="#/publications">All publications</a></span></div></li>
-  </ul>
+  <ul class="list" id="latest-list"><li><div class="d"></div><div>Loading…</div></li></ul>
+  <p class="note" style="margin-top:18px"><a href="#/public">All public scholarship</a> · <a href="https://medium.com/@gustavo.fuchs">Read more on Medium</a></p>
 </section>
 <section id="contact" data-view="home">
   <h2>Contact</h2>
@@ -148,11 +143,11 @@ nav a.on{color:var(--accent);font-weight:700}
 <section id="public" data-view="public">
   <h2>Public Scholarship</h2>
   <ul class="list">
-    <li><div class="d">2026</div><div><a href="https://andregagne.substack.com/p/spiritual-warfare-in-contemporary">Spiritual Warfare in Contemporary Central American Evangelical Politics</a><span>Spirit, State and Society (podcast)</span></div></li>
-    <li><div class="d">2024</div><div><a href="https://podcasts.apple.com/us/podcast/under-the-shadow-ep-11-costa-rica-peace-democracymaybe/id1289450685?i=1000661674092">Costa Rica: Peace &amp; Democracy-Maybe</a><span>Under the Shadow (podcast)</span></div></li>
+    <li><div class="d">Aug 2026</div><div><a href="https://andregagne.substack.com/p/spiritual-warfare-in-contemporary">Spiritual Warfare in Contemporary Central American Evangelical Politics</a><span>Spirit, State and Society (podcast)</span></div></li>
+    <li><div class="d">Sep 2024</div><div><a href="https://podcasts.apple.com/us/podcast/under-the-shadow-ep-11-costa-rica-peace-democracymaybe/id1289450685?i=1000661674092">Costa Rica: Peace &amp; Democracy-Maybe</a><span>Under the Shadow (podcast)</span></div></li>
     <li><div class="d">2023</div><div><a href="https://sites.utexas.edu/llilas-benson-magazine/2023/10/17/finding-god-over-the-airwaves-is-religious-media-driving-protestant-growth-in-latin-america/">Finding God over the Airwaves: Is Religious Media Driving Protestant Growth in Latin America?</a><span>Portal Magazine, no. 18</span></div></li>
-    <li><div class="d">2023</div><div><a href="https://therealnews.com/el-salvadors-model-of-authoritarianism-is-spreading-to-countries-like-costa-rica-and-honduras">El Salvador’s model of authoritarianism may be spreading to countries like Costa Rica and Honduras</a><span>Interview, The Real News Network</span></div></li>
-    <li><div class="d">2022</div><div><a href="https://repositorio.iis.ucr.ac.cr/items/b08a1d76-d196-40d8-ae35-df3e1093a1ec">Una fotografía de la concentración mediática en Centroamérica</a><span>Cuando El Zapato Aprieta (podcast)</span></div></li>
+    <li><div class="d">Aug 2023</div><div><a href="https://therealnews.com/el-salvadors-model-of-authoritarianism-is-spreading-to-countries-like-costa-rica-and-honduras">El Salvador’s model of authoritarianism may be spreading to countries like Costa Rica and Honduras</a><span>Interview, The Real News Network</span></div></li>
+    <li><div class="d">Sep 2022</div><div><a href="https://repositorio.iis.ucr.ac.cr/items/b08a1d76-d196-40d8-ae35-df3e1093a1ec">Una fotografía de la concentración mediática en Centroamérica</a><span>Cuando El Zapato Aprieta (podcast)</span></div></li>
     <li><div class="d">2021</div><div><a href="https://doi.org/10.1080/10714839.2021.2000761">Who Controls Latin America’s Media?</a><span>NACLA Report on the Americas, no. 53</span></div></li>
     <li><div class="d">2020</div><div><a href="https://doi.org/10.1080/10714839.2020.1809075">Costa Rica’s Pandemic Pitfalls</a><span>NACLA Report on the Americas, no. 52</span></div></li>
     <li><div class="d">2019</div><div><a href="https://id.erudit.org/iderudit/91736ac">Le Costa Rica, carboneutre d’ici 2050?</a><span>Revue Relations, no. 804</span></div></li>
@@ -238,30 +233,41 @@ nav a.on{color:var(--accent);font-weight:700}
 })();
 </script>
 <script>
-/* Latest posts from Substack or Medium (RSS). Paste your feed address between the quotes.
-   Substack: https://YOURNAME.substack.com/feed
-   Medium:   https://medium.com/feed/@YOURNAME
-   Leave empty to show only the manual items. */
+/* Latest section: Medium posts + Public Scholarship items, newest first. */
 var FEED_URL='https://medium.com/feed/@gustavo.fuchs';
-var FEED_LABEL='Medium';
-var FEED_COUNT=3;
+var FEED_COUNT=6;
 (function(){
-  if(!FEED_URL)return;
-  var list=document.querySelector('#latest .list');
+  var list=document.getElementById('latest-list');
+  var M={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
+  function key(txt){var p=String(txt).trim().split(/\s+/),y=parseInt(p[p.length-1],10)||0,m=p.length>1?(M[p[0]]||0):0;return y*100+m}
+  var items=[];
+  document.querySelectorAll('#public .list li').forEach(function(li){
+    var d=li.querySelector('.d'),a=li.querySelector('a'),sp=li.querySelector('span');
+    if(!d||!a)return;
+    items.push({key:key(d.textContent),date:d.textContent.trim(),href:a.href,title:a.textContent,src:(sp?sp.textContent+' · ':'')+'Public Scholarship'});
+  });
+  function render(){
+    var all=items.slice().sort(function(a,b){return b.key-a.key}).slice(0,FEED_COUNT);
+    list.textContent='';
+    all.forEach(function(it){
+      var li=document.createElement('li'),dt=document.createElement('div'),box=document.createElement('div'),a=document.createElement('a'),sp=document.createElement('span');
+      dt.className='d';dt.textContent=it.date;
+      a.href=it.href;a.textContent=it.title;sp.textContent=it.src;
+      box.appendChild(a);box.appendChild(sp);li.appendChild(dt);li.appendChild(box);list.appendChild(li);
+    });
+  }
+  render();
   fetch('https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent(FEED_URL))
     .then(function(r){return r.json()})
     .then(function(d){
       if(!d||d.status!=='ok'||!d.items)return;
-      d.items.slice(0,FEED_COUNT).reverse().forEach(function(it){
-        var li=document.createElement('li'),dt=document.createElement('div'),box=document.createElement('div'),a=document.createElement('a'),sp=document.createElement('span');
-        dt.className='d';
+      d.items.slice(0,FEED_COUNT).forEach(function(it){
         var t=new Date(String(it.pubDate).replace(' ','T')+'Z');
-        dt.textContent=isNaN(t)?'':t.toLocaleDateString('en-US',{month:'short',year:'numeric'});
-        a.href=it.link;a.textContent=it.title;
-        sp.textContent=FEED_LABEL;
-        box.appendChild(a);box.appendChild(sp);li.appendChild(dt);li.appendChild(box);
-        list.insertBefore(li,list.firstChild);
+        if(isNaN(t))return;
+        var label=t.toLocaleDateString('en-US',{month:'short',year:'numeric',timeZone:'UTC'});
+        items.push({key:t.getUTCFullYear()*100+t.getUTCMonth()+1,date:label,href:it.link,title:it.title,src:'Medium'});
       });
+      render();
     })
     .catch(function(){});
 })();
